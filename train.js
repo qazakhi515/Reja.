@@ -1,4 +1,12 @@
-// Task a 
+/* Masalani izohi
+  A-TASK: 
+
+Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni 
+ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
+MASALAN countLetter("e", "engineer") 3ni return qiladi.
+
+masalani yechimi:  */
+
 function countLetter(harf, soz) {
   let count = 0;
 
@@ -14,7 +22,7 @@ function countLetter(harf, soz) {
 console.log(countLetter("m", "muhammadamin"));
 console.log(countLetter("a", "abama"));
 console.log(countLetter("k", "kalaka"));
-// 
+
 // console.log('Jeck Ma maslahatlari');
 // const list = [
 //     "yahshi talaba boling", // 0-20 
@@ -36,7 +44,7 @@ console.log(countLetter("k", "kalaka"));
 //  } 
 // }
 
-// maslahatBering(31, (err, data) => {
+// maslahatBering(69, (err, data) => {
 //     if(err) console.log("ERROR:", err);
 //     console.log('javob:', data);
 // });
