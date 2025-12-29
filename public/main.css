@@ -215,7 +215,7 @@
     width:24.99px;
     height:22.8px;
     border-radius: 50%;
-    background:#FAFAFA ;
+    
     filter:drop-shadow(0 4px 4px rgba(0,0,0,0.25));
 }
 
@@ -360,7 +360,7 @@
 
 .main_frame .left_frame .left_3 .left_3-1 .left_3-1-line .left_3-1-lin-3{
     background: #ffb400;
-    width: 190px;
+    width: 180px;
     height: 2px;
     border-radius: 30px;
     border: solid 0.1px #ffb400;
@@ -440,7 +440,7 @@
 
 .main_frame .left_frame .left_4 .left_4-1 .left_4-1-line .left_4-1-lin-2{
     background: #ffb400;
-    width: 207px;
+    width: 200px;
     height: 2px;
     border-radius: 30px;
     border: solid 0.1px #ffb400;
@@ -448,7 +448,7 @@
 }
 .left_frame .left_4 .left_4-1 .left_4-1-line .left_4-1-lin-3{
     background: #ffb400;
-    width: 187px;
+    width: 182px;
     height: 2px;
     border-radius: 30px;
     border: solid 0.1px #ffb400;
@@ -457,7 +457,7 @@
 
 .main_frame .left_frame .left_4 .left_4-1 .left_4-1-line .left_4-1-lin-4{
     background: #ffb400;
-    width: 187px;
+    width: 182px;
     height: 2px;
     border-radius: 30px;
     border: solid 0.1px #ffb400;
@@ -466,7 +466,7 @@
 
 .main_frame .left_frame .left_4 .left_4-1 .left_4-1-line .left_4-1-lin-5{
     background: #ffb400;
-    width: 187px;
+    width: 204px;
     height: 2px;
     border-radius: 30px;
     border: solid 0.1px #ffb400;
