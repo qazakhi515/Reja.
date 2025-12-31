@@ -1,3 +1,23 @@
+/*TASK B
+
+Shunday, function tuzingki, bu function yagona parametrga ega bo'lib
+string tarkibidagi sonlar miqdorini qaytarsin
+
+Masalan: countDigits("ad2a54y79wet0sfgb9")
+Yuqoridagi string tarkibida 7 dona raqam qatnashganligi uchun, natija 7 qaytadi */
+// masalani yechimi:
+function qaytarDigit(str) {
+  let natija = "";
+  for(let i = 0; i < str.length; i++) {
+    let harf = str[i];
+    if (harf >= "0" && harf <= "9") {
+       natija += harf;
+    }
+  }
+  return natija;
+}
+console.log(qaytarDigit("IP address 23.p485.31 a 12"));
+
 /* Masalani izohi
   A-TASK: 
 
@@ -7,21 +27,21 @@ MASALAN countLetter("e", "engineer") 3ni return qiladi.
 
 masalani yechimi:  */
 
-function countLetter(harf, soz) {
-  let count = 0;
+// function countLetter(harf, soz) {
+//   let count = 0;
 
-  for (let i = 0; i < soz.length; i++) {
-    if (soz[i] === harf) {
-      count++;
-    }
-  }
+//   for (let i = 0; i < soz.length; i++) {
+//     if (soz[i] === harf) {
+//       count++;
+//     }
+//   }
 
-  return count;
-};
+//   return count;
+// };
 
-console.log(countLetter("m", "muhammadamin"));
-console.log(countLetter("a", "abama"));
-console.log(countLetter("k", "kalaka"));
+// console.log(countLetter("m", "muhammadamin"));
+// console.log(countLetter("a", "abama"));
+// console.log(countLetter("k", "kalaka"));
 
 // 2     /////////////////// =======================================/////////////////////////
 // console.log('Jeck Ma maslahatlari');
