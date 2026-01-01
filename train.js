@@ -1,3 +1,52 @@
+/*TASK-C.  <<<<<<<<<<<<<<<........>>>>>>>>>>>>
+
+Shop nomli class tuzing, va bu class 3 xill parametr qabul qilsin.
+Hamda classning quyidagdek 3'ta metodi bo'lsin:
+
+1) qoldiq
+2) sotish
+3) qabul
+
+Har bir metod ishga tushgan vaqtda log qilinsin
+
+MASALAN:
+const shop = new Shop(4, 5, 2)
+
+shop.qoldiq();
+natija qaytishi kerak: Hozir 20: 40'da 4'ta non, 5'ta lag'mon va 2'ta cola mavjud
+
+shop.sotish("non", 3); & shop.qabul("cola", 4); & shop.qoldiq();
+Natija qaytishi kerak: Hozir 20:50da 1ta non, 5ta lag'mon va 6ta cola mavjud!*/ 
+//masalani yechimi:  >>>>>>>>>>>>>>>>>>
+class Shop {
+  drink = "";
+  meal = "";
+  bread = "";
+
+  constructor(drink, meal,bread) {
+    this.drink = drink;
+    this.meal = meal;
+    this.bread = bread;
+  }
+  qoldiq(){
+    console.log(`Hozir 12:30 dokanimizda mavjud bolgan narsalar: Dinay ${this.drink}ta, Jizz ${this.meal} ta Patir ${this.bread} ta dan iborat`);
+  }
+  sotish(){
+    console.log(`Hozir 20:10 dokanimizda mavjud bolgan narsalar: Cola ${this.drink}ta, Palov ${this.bread} ta va Obi non ${this.bread} dan iborat`);
+  }
+  qabul(){
+    console.log(`Hozir 14:30 dokanimizda mavjud bolgan narsalar: Ayron ${this.drink}ta, Dolma ${this.bread}ta va Samarqand non ${this.bread} dan iborat`);
+  }
+
+}
+  const VodiyFood = new Shop(10,3,4);
+  const IpakYoli = new Shop(14,1,2);
+  const MuslimFood = new Shop(12,2,6);
+  
+VodiyFood.sotish();
+MuslimFood.qabul();
+
+
 /*TASK B
 
 Shunday, function tuzingki, bu function yagona parametrga ega bo'lib
@@ -6,17 +55,17 @@ string tarkibidagi sonlar miqdorini qaytarsin
 Masalan: countDigits("ad2a54y79wet0sfgb9")
 Yuqoridagi string tarkibida 7 dona raqam qatnashganligi uchun, natija 7 qaytadi */
 // masalani yechimi:
-function qaytarDigit(str) {
-  let natija = "";
-  for(let i = 0; i < str.length; i++) {
-    let harf = str[i];
-    if (harf >= "0" && harf <= "9") {
-       natija += harf;
-    }
-  }
-  return natija;
-}
-console.log(qaytarDigit("IP address 23.p485.31 a 12"));
+// function qaytarDigit(str) {
+//   let natija = "";
+//   for(let i = 0; i < str.length; i++) {
+//     let harf = str[i];
+//     if (harf >= "0" && harf <= "9") {
+//        natija += harf;
+//     }
+//   }
+//   return natija;
+// }
+// console.log(qaytarDigit("IP address 23.p485.31 a 12"));
 
 /* Masalani izohi
   A-TASK: 
