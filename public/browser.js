@@ -22,12 +22,34 @@ document.getElementById("create-form").addEventListener("submit", function(e) {
     .post("/create-item", {reja: createField.value})
     .then((response) => {
         document
-        .getElementById("item-list")
-        .insertAdjacentElement("beforeend", itemTemplate(response.data));
+         .getElementById("item-list")
+         .insertAdjacentHTML("beforeend", itemTemplate(response.data));
         createField.value = "";
         createField.focus();
     }) 
     .catch((err) => {
         console.log("Iltimos qaytadan urinib koring!");
     });
-})
+});
+document.addEventListener("click", function(e) {
+    // delete operation
+    console.log(e.target);
+    if(e.target.classList.contains("delete-me")){
+        if(confirm("aniq ochirmoqchimisiz?")) {
+            axios
+            .post("/delete-item", {id: e.target.getAttribute("data-id")})
+            .then((response) => {
+                console.log(response.data);
+                e.target.parentElement.parentElement.remove();
+            })
+            .catch((err) => {
+                console.log('Iltimos qayta urinib koring')
+            });
+        }
+    }
+      // edit op
+      if(e, target.classList.contains("delete-me")){
+         alert("siz edit tugmasini bosdingiz");
+     }
+    
+});
