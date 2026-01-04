@@ -28,14 +28,21 @@ class Shop {
     this.meal = meal;
     this.bread = bread;
   }
+  getTime() {
+    let now = new Date();
+    let hour = now.getHours();
+    let minut = now.getMinutes()
+    return `${soat}:${minut}`;
+  }
+  
   qoldiq(){
-    console.log(`Hozir 12:30 dokanimizda mavjud bolgan narsalar: Dinay ${this.drink}ta, Jizz ${this.meal} ta Patir ${this.bread} ta dan iborat`);
+    console.log(`Hozir ${this.getTime} dokanimizda mavjud bolgan narsalar: Dinay ${this.drink}ta, Jizz ${this.meal} ta Patir ${this.bread} ta dan iborat`);
   }
   sotish(){
-    console.log(`Hozir 20:10 dokanimizda mavjud bolgan narsalar: Cola ${this.drink}ta, Palov ${this.bread} ta va Obi non ${this.bread} dan iborat`);
+    console.log(`Hozir ${this.getTime} dokanimizda mavjud bolgan narsalar: Cola ${this.drink}ta, Palov ${this.bread} ta va Obi non ${this.bread} dan iborat`);
   }
   qabul(){
-    console.log(`Hozir 14:30 dokanimizda mavjud bolgan narsalar: Ayron ${this.drink}ta, Dolma ${this.bread}ta va Samarqand non ${this.bread} dan iborat`);
+    console.log(`Hozir ${this.getTime} dokanimizda mavjud bolgan narsalar: Ayron ${this.drink}ta, Dolma ${this.bread}ta va Samarqand non ${this.bread} dan iborat`);
   }
 
 }
