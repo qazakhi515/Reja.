@@ -1,3 +1,35 @@
+// TASK D <<<<<<<<<<<<<<<........>>>>>>>>>>>>
+
+// Ikkita parametra ega function tuzing, va functioning
+// berilgan birinchi va ikkinchi parametr qiymatlari o'zaro to'liq
+// mos kelsa true qiymat qaytarsin
+
+// Masalan: checkContent("mitgroup", "gmtiprou");
+// Yuqoridagi misolda birinchi va ikkinchi parametr qiymatli bir xil
+// ya'ni bir xil harflar qatnashganligi uchun true qiymat qaytaradi.
+  //masalani yechimi:  >>>>>>>>>>>>>>>>>>
+
+
+function checkContent(a,b) {
+    if(a.length !== b.length) {
+      return false;
+    }
+    const tuslashA = 
+    a.split('').sort().join('');
+    const tuslashB =
+    b.split('').sort().join('');
+    console.log("natija a:",tuslashA );
+    console.log("natija b:",tuslashB );
+     if(tuslashA === tuslashB) {
+      return true;
+     } else {
+      return false;
+     }
+}
+console.log(checkContent ("zarra", "aarrz"));
+console.log(checkContent ('masalan', 'nalasam'));
+console.log(checkContent(' kavsar', 'sarvaa'));
+
 /*TASK-C.  <<<<<<<<<<<<<<<........>>>>>>>>>>>>
 
 Shop nomli class tuzing, va bu class 3 xill parametr qabul qilsin.
@@ -18,40 +50,40 @@ natija qaytishi kerak: Hozir 20: 40'da 4'ta non, 5'ta lag'mon va 2'ta cola mavju
 shop.sotish("non", 3); & shop.qabul("cola", 4); & shop.qoldiq();
 Natija qaytishi kerak: Hozir 20:50da 1ta non, 5ta lag'mon va 6ta cola mavjud!*/ 
 //masalani yechimi:  >>>>>>>>>>>>>>>>>>
-class Shop {
-  drink = "";
-  meal = "";
-  bread = "";
+// class Shop {
+//   drink = "";
+//   meal = "";
+//   bread = "";
 
-  constructor(drink, meal,bread) {
-    this.drink = drink;
-    this.meal = meal;
-    this.bread = bread;
-  }
-  getTime() {
-    let now = new Date();
-    let hour = now.getHours();
-    let minut = now.getMinutes()
-    return `${soat}:${minut}`;
-  }
+//   constructor(drink, meal,bread) {
+//     this.drink = drink;
+//     this.meal = meal;
+//     this.bread = bread;
+//   }
+//   getTime() {
+//     let now = new Date();
+//     let hour = now.getHours();
+//     let minut = now.getMinutes()
+//     return `${soat}:${minut}`;
+//   }
   
-  qoldiq(){
-    console.log(`Hozir ${this.getTime} dokanimizda mavjud bolgan narsalar: Dinay ${this.drink}ta, Jizz ${this.meal} ta Patir ${this.bread} ta dan iborat`);
-  }
-  sotish(){
-    console.log(`Hozir ${this.getTime} dokanimizda mavjud bolgan narsalar: Cola ${this.drink}ta, Palov ${this.bread} ta va Obi non ${this.bread} dan iborat`);
-  }
-  qabul(){
-    console.log(`Hozir ${this.getTime} dokanimizda mavjud bolgan narsalar: Ayron ${this.drink}ta, Dolma ${this.bread}ta va Samarqand non ${this.bread} dan iborat`);
-  }
+//   qoldiq(){
+//     console.log(`Hozir ${this.getTime} dokanimizda mavjud bolgan narsalar: Dinay ${this.drink}ta, Jizz ${this.meal} ta Patir ${this.bread} ta dan iborat`);
+//   }
+//   sotish(){
+//     console.log(`Hozir ${this.getTime} dokanimizda mavjud bolgan narsalar: Cola ${this.drink}ta, Palov ${this.bread} ta va Obi non ${this.bread} dan iborat`);
+//   }
+//   qabul(){
+//     console.log(`Hozir ${this.getTime} dokanimizda mavjud bolgan narsalar: Ayron ${this.drink}ta, Dolma ${this.bread}ta va Samarqand non ${this.bread} dan iborat`);
+//   }
 
-}
-  const VodiyFood = new Shop(10,3,4);
-  const IpakYoli = new Shop(14,1,2);
-  const MuslimFood = new Shop(12,2,6);
+// }
+//   const VodiyFood = new Shop(10,3,4);
+//   const IpakYoli = new Shop(14,1,2);
+//   const MuslimFood = new Shop(12,2,6);
   
-VodiyFood.sotish();
-MuslimFood.qabul();
+// VodiyFood.sotish();
+// MuslimFood.qabul();
 
 
 /*TASK B
