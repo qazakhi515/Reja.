@@ -20,12 +20,28 @@ function checkContent(a,b) {
     b.split('').sort().join('');
     console.log("natija a:",tuslashA );
     console.log("natija b:",tuslashB );
-     if(tuslashA === tuslashB) {
+     if(tuslashA === tuslashB) { 
       return true;
      } else {
       return false;
      }
 }
+
+
+// function checkContent(str1, str2) {
+//   if (str1.length !== str2.length) return false;
+
+//   const sort1 = str1.split('').sort().join('');
+//   const sort2 = str2.split('').sort().join('');
+
+//   return sort1 === sort2;
+// }
+// console.log(checkContent("mitgroup", "tiprou"));
+// checkContent("mitgroup", "gmtiprou"); // true
+// checkContent("hello", "ollhe");       // true
+// checkContent("hello", "world");       // false
+
+
 console.log(checkContent ("zarra", "aarrz"));
 console.log(checkContent ('masalan', 'nalasam'));
 console.log(checkContent(' kavsar', 'sarvaa'));
