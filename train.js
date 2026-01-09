@@ -1,50 +1,73 @@
-// TASK D <<<<<<<<<<<<<<<........>>>>>>>>>>>>
+/*TASK F
 
+Yagona string argumentga ega findDoublers nomli function tuzing
+Agar stringda bittadan ortiq bir xil harflar ishtirok etgan bo'lsa
+true yokida false natija qaytarsin.
+
+MASALAN: findDoublers("hello"); natija true qaytadi. Sababi ikki marotaba takrorlangan 'll' harfi mavjud!*/
+
+function findDoublers(str) {
+ const check = {};
+ for (let letter of str) {
+  if (check [letter]) {
+    return true;
+  }
+  check[letter] = true;
+ }
+ return false;
+};
+console.log(findDoublers("hello"));
+console.log(findDoublers("masla"));
+console.log(findDoublers("sabzi"));
+// E-TASK: 
+
+// Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+// MASALAN: getReverse("hello") return qilsin "olleh"
+
+// function teskari(helloWorld) {
+// return helloWorld.split("").reverse().join("")
+// }
+
+// console.log(teskari("Javob"));
+
+// TASK D <<<<<<<<<<<<<<<........>>>>>>>>>>>>
 // Ikkita parametra ega function tuzing, va functioning
 // berilgan birinchi va ikkinchi parametr qiymatlari o'zaro to'liq
 // mos kelsa true qiymat qaytarsin
-
 // Masalan: checkContent("mitgroup", "gmtiprou");
 // Yuqoridagi misolda birinchi va ikkinchi parametr qiymatli bir xil
 // ya'ni bir xil harflar qatnashganligi uchun true qiymat qaytaradi.
   //masalani yechimi:  >>>>>>>>>>>>>>>>>>
 
-
-function checkContent(a,b) {
-    if(a.length !== b.length) {
-      return false;
-    }
-    const tuslashA = 
-    a.split('').sort().join('');
-    const tuslashB =
-    b.split('').sort().join('');
-    console.log("natija a:",tuslashA );
-    console.log("natija b:",tuslashB );
-     if(tuslashA === tuslashB) { 
-      return true;
-     } else {
-      return false;
-     }
-}
-
-
+// function checkContent(a,b) {
+//     if(a.length !== b.length) {
+//       return false;
+//     }
+//     const tuslashA = 
+//     a.split('').sort().join('');
+//     const tuslashB =
+//     b.split('').sort().join('');
+//     console.log("natija a:",tuslashA );
+//     console.log("natija b:",tuslashB );
+//      if(tuslashA === tuslashB) { 
+//       return true;
+//      } else {
+//       return false;
+//      }
+// 
 // function checkContent(str1, str2) {
 //   if (str1.length !== str2.length) return false;
-
 //   const sort1 = str1.split('').sort().join('');
 //   const sort2 = str2.split('').sort().join('');
-
 //   return sort1 === sort2;
 // }
 // console.log(checkContent("mitgroup", "tiprou"));
 // checkContent("mitgroup", "gmtiprou"); // true
 // checkContent("hello", "ollhe");       // true
 // checkContent("hello", "world");       // false
-
-
-console.log(checkContent ("zarra", "aarrz"));
-console.log(checkContent ('masalan', 'nalasam'));
-console.log(checkContent(' kavsar', 'sarvaa'));
+// console.log(checkContent ("zarra", "aarrz"));
+// console.log(checkContent ('masalan', 'nalasam'));
+// console.log(checkContent(' kavsar', 'sarvaa'));
 
 /*TASK-C.  <<<<<<<<<<<<<<<........>>>>>>>>>>>>
 
